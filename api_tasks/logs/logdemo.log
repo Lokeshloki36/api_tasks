@@ -1,0 +1,22 @@
+13:48:35.941 [main] (logStarted) INFO  com.mayuratech.api.ApiApplication - Started ApiApplication in 5.623 seconds (JVM running for 7.248)
+13:48:35.953 [main] (onApplicationEvent) DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+13:48:35.954 [main] (logs) INFO  com.mayuratech.api.logging.Log4JDemo - Application started Successfull
+13:48:35.955 [main] (onApplicationEvent) DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+13:48:43.061 [http-nio-8081-exec-1] (initServletBean) INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:48:43.062 [http-nio-8081-exec-1] (initMultipartResolver) DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+13:48:43.062 [http-nio-8081-exec-1] (initLocaleResolver) DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+13:48:43.062 [http-nio-8081-exec-1] (initThemeResolver) DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+13:48:43.062 [http-nio-8081-exec-1] (initRequestToViewNameTranslator) DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c2d124e
+13:48:43.064 [http-nio-8081-exec-1] (initFlashMapManager) DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3abd7b20
+13:48:43.064 [http-nio-8081-exec-1] (initServletBean) DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+13:48:43.064 [http-nio-8081-exec-1] (initServletBean) INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+13:48:43.086 [http-nio-8081-exec-1] (traceDebug) DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/users", parameters={}
+13:48:43.093 [http-nio-8081-exec-1] (getHandler) DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.mayuratech.api.controller.UserApiController#getAllUsers()
+13:48:43.322 [http-nio-8081-exec-1] (logStatement) DEBUG org.hibernate.SQL - select userdetail0_.id as id1_0_, userdetail0_.account_number as account_2_0_, userdetail0_.account_balance as account_3_0_, userdetail0_.customer_name as customer4_0_ from bank_accounts userdetail0_
+13:48:43.464 [http-nio-8081-exec-1] (writeWithMessageConverters) DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, application/*+json] and supported [application/json]
+13:48:43.476 [http-nio-8081-exec-1] (traceDebug) DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor - Writing [[Customer [id=1, name=Raj Gopal, accountNumber=135791, balance=8007.0], Customer [id=2, name=Rama Ra (truncated)...]
+13:48:43.535 [http-nio-8081-exec-1] (logResult) DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+13:57:00.740 [RMI TCP Connection(18)-127.0.0.1] (shutdown) INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+13:57:00.746 [RMI TCP Connection(18)-127.0.0.1] (onApplicationEvent) DEBUG org.springframework.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+13:57:00.749 [RMI TCP Connection(18)-127.0.0.1] (doClose) DEBUG org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@777c9dc9, started on Fri Sep 22 13:48:30 IST 2023
+13:57:01.246 [RMI TCP Connection(18)-127.0.0.1] (destroy) INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

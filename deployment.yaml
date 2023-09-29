@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-task-deployment
+spec:
+  replicas: 2
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: api-tasks
+  template: 
+    metadata:
+      name: api-tasks
+      labels:
+        app: api-tasks
+    spec:
+      containers:
+      - name: api-tasks
+        image: lokeshb36/api_task
+        ports:
+          - containerPort: 8080
